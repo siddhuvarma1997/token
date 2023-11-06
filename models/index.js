@@ -13,6 +13,7 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
 });
 
 const db = {};
+
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 db.orders = require("./orders.model")(sequelize, Sequelize);
